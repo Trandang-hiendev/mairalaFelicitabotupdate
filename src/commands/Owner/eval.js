@@ -4,7 +4,7 @@ const { post } = require("node-superfetch");
 module.exports = {
   name: "eval",
   category: "Owner",
-  description: "Eval Code",
+  description: "Zenus Code",
   aliases: [ "ev" ],
   args: false,
   usage: "<string>",
