@@ -32,10 +32,10 @@ module.exports = {
     });
     let fck = client.ws.ping;
     const embed = new MessageEmbed()
-      .setAuthor("𝑲𝒊𝒏𝒈 Stats", "")
+      .setAuthor("Zenus Stats", "")
       .setColor(client.embedColor)
       .setThumbnail("")
-      .setDescription(`**__Bot Stats__**\n<:online:1210253399031812147>Bot Name : ${client.user.username}\n<:online:1210253399031812147>Servers : ${scount}\n<:online:1210253399031812147>Users : ${mcount}\n<:online:1210253399031812147>Ping : ${Math.round(client.ws.ping)}ms\n<:online:1210253399031812147>Uptime : ${duration1}\n\n**__Bot Storage__**\n <:online:1210253399031812147>Bot Version : 𝑲𝒊𝒏𝒈 V1\n <:online:1210253399031812147>Js Version : 13.6.0\n\n**__Creator__**\n[king](https://discord.gg/k7euMVR4q6)
+      .setDescription(`**Bot Stats**\n<:online:1210253399031812147>Bot Name : ${client.user.username}\n<:online:1210253399031812147>Servers : ${scount}\n<:online:1210253399031812147>Users : ${mcount}\n<:online:1210253399031812147>Ping : ${Math.round(client.ws.ping)}ms\n<:online:1210253399031812147>Uptime : ${duration1}\n\n**__Bot Storage__**\n <:online:1210253399031812147>Bot Version : 𝑲𝒊𝒏𝒈 V1\n <:online:1210253399031812147>Js Version : 13.6.0\n\n**__Creator__**\n[king](https://discord.gg/k7euMVR4q6)
 
       `);
     const button = new MessageActionRow().addComponents(
