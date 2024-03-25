@@ -32,7 +32,7 @@ module.exports = {
 
       .setColor(client.embedColor)
       .setDescription(
-        `[Click here](https://discord.gg/) To Invite Or The Below Button To Invite`,
+        `[Nhấn vào đây](https://discord.gg/) để invite bot`,
       );
     message.reply({ embeds: [mainPage], components: [row] });
   },
