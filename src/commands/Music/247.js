@@ -20,13 +20,13 @@ module.exports = {
       player.twentyFourSeven = false;
       const embed = new MessageEmbed()
         .setColor(client.embedColor)
-        .setDescription(i18n.__("<:online:1210253399031812147> | 24/7 is disabled in this server"));
+        .setDescription(i18n.__("<:online:1210253399031812147> | Chế độ 24/7 đã được tắt"));
       return message.reply({ embeds: [embed] });
     } else {
       player.twentyFourSeven = true;
       const embed = new MessageEmbed()
         .setColor(client.embedColor)
-        .setDescription(i18n.__("<:online:1210253399031812147> | 24/7 is successfully enabled"));
+        .setDescription(i18n.__("<:online:1210253399031812147> | Chế độ 24/7 đã được bật"));
 
       return message.reply({ embeds: [embed] });
     }
