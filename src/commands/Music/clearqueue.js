@@ -4,9 +4,9 @@ module.exports = {
     name: "clearqueue",
     aliases: ["cq"],
     category: "Music",
-  	description: "Clear Queue",
+  	description: "Xóa vòng lặp",
 	  args: false,
-    usage: "<Number of song in queue>",
+    usage: "<Số bài hát trong vòng lặp>",
     permission: [],
     owner: false,
     player: true,
@@ -19,7 +19,7 @@ module.exports = {
         if (!player.queue.current) {
             let thing = new MessageEmbed()
                 .setColor("#303037")
-                .setDescription("<:queue:1213063749557297192> | There is no music playing.");
+                .setDescription("<:queue:1213063749557297192> | Không có bài hát nào đang phát.");
             return message.reply({embeds: [thing]});
         }
 
@@ -30,7 +30,7 @@ module.exports = {
 		let thing = new MessageEmbed()
 			.setColor(message.client.embedColor)
 			
-			.setDescription(`<:queue:1213063749557297192> | Successfully Removed all songs from the queue`)
+			.setDescription(`<:queue:1213063749557297192> | Đã xóa thành công tất cả`)
 			  return message.reply({embeds: [thing]});
     }
 };
