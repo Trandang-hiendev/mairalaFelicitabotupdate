@@ -4,7 +4,7 @@ module.exports = {
   name: "autoplay",
   aliases: ["ap"],
   category: "Music",
-  description: "Toggle music autoplay.",
+  description: "music autoplay.",
   args: false,
   usage: "",
   userPerms: [],
@@ -21,7 +21,7 @@ module.exports = {
 
     if (!player.queue.current)
       return message.reply({
-        content: `<:autoplay:1213063170512519200> | Please play a song before using this command.`,
+        content: `<:autoplay:1213063170512519200> | Hãy bật một bài hát trước khi dùng lệnh này.`,
       });
     
     
@@ -31,7 +31,7 @@ module.exports = {
       let thing = new MessageEmbed()
         .setColor(client.embedColor)
       
-        .setDescription(`<:autoplay:1213063170512519200> | Disabled autoplay.`);
+        .setDescription(`<:autoplay:1213063170512519200> | Đã tắt chế độ autoplay.`);
       return message.channel.send({ embeds: [thing] });
     } else {
       const identifier = player.queue.current.identifier;
@@ -46,7 +46,7 @@ module.exports = {
       let thing = new MessageEmbed()
         .setColor(client.embedColor)
         
-        .setDescription(`<:autoplay:1213063170512519200> | Successfully enabled autoplay.`);
+        .setDescription(`<:autoplay:1213063170512519200> | Đã bật chế độ autoplay.`);
 
       return message.channel.send({ embeds: [thing] });
     }
