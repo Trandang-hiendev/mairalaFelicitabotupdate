@@ -16,7 +16,7 @@ module.exports = {
 
     if (!message.guild.me.permissions.has(Permissions.FLAGS.CONNECT) || !message.guild.me.permissions.has(Permissions.FLAGS.SPEAK)) {
       return message.channel.send({
-        embeds: [new MessageEmbed().setColor(client.embedColor).setDescription(`<:online:1210253399031812147> | I don't have enough permissions to execute this command! Please give me permission \`CONNECT\` or \`SPEAK\`.`)]
+        embeds: [new MessageEmbed().setColor(client.embedColor).setDescription(`<:online:1210253399031812147> | Thiếu quyền \`CONNECT\` hoặc \`SPEAK\`.`)]
       });
     }
 
@@ -24,7 +24,7 @@ module.exports = {
 
     if (!message.guild.me.permissionsIn(channel).has(Permissions.FLAGS.CONNECT) || !message.guild.me.permissionsIn(channel).has(Permissions.FLAGS.SPEAK)) {
       return message.channel.send({
-        embeds: [new MessageEmbed().setColor(client.embedColor).setDescription(`<:online:1210253399031812147> | I don't have enough permissions to connect to your voice channel. Please give me permission \`CONNECT\` or \`SPEAK\`.`)]
+        embeds: [new MessageEmbed().setColor(client.embedColor).setDescription(`<:online:1210253399031812147> | Thiếu quyền  \`CONNECT\` hoặc \`SPEAK\`.`)]
       });
     }
 
@@ -44,14 +44,14 @@ module.exports = {
 
       let thing = new MessageEmbed()
         .setColor(client.embedColor)
-        .setDescription(`<:online:1210253399031812147> | **Successfully Joined In <#${channel.id}>**`);
+        .setDescription(`<:online:1210253399031812147> | **Đã tham gia vào <#${channel.id}>**`);
       return message.reply({ embeds: [thing] });
 
     } else if (message.guild.me.voice.channel !== channel) {
 
       let thing = new MessageEmbed()
         .setColor("#303037")
-        .setDescription(`<:online:1210253399031812147> | You must be in the same channel as ${message.client.user}`);
+        .setDescription(`<:online:1210253399031812147> | **Bạn phải ở trong kênh thoại** ${message.client.user}`);
       return message.reply({ embeds: [thing] });
     }
 
