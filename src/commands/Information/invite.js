@@ -15,12 +15,12 @@ module.exports = {
         .setLabel("Invite")
         .setStyle("LINK")
         .setEmoji("🔗")
-        .setURL(`https://discord.gg/k7euMVR4q6`),
+        .setURL(`https://discord.gg/`),
       new MessageButton()
         .setLabel("Support")
         .setStyle("LINK")
         .setEmoji("🔗")
-        .setURL("https://discord.gg/k7euMVR4q6"),
+        .setURL("https://discord.gg/"),
     );
 
     const mainPage = new MessageEmbed()
@@ -32,7 +32,7 @@ module.exports = {
 
       .setColor(client.embedColor)
       .setDescription(
-        `[Click here](https://discord.gg/k7euMVR4q6) To Invite Or The Below Button To Invite`,
+        `[Click here](https://discord.gg/) To Invite Or The Below Button To Invite`,
       );
     message.reply({ embeds: [mainPage], components: [row] });
   },
