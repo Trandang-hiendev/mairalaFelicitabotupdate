@@ -19,15 +19,15 @@ module.exports = {
       new MessageButton()
         .setLabel("Vote Me")
         .setStyle("LINK")
-        .setURL(`https://discord.gg/k7euMVR4q6`),
+        .setURL(`https://discord.gg/`),
       new MessageButton()
         .setLabel("Invite")
         .setStyle("LINK")
-        .setURL(`https://discord.gg/k7euMVR4q6`),
+        .setURL(`https://discord.gg/`),
       new MessageButton()
         .setLabel("Support")
         .setStyle("LINK")
-        .setURL("https://discord.gg/k7euMVR4q6"),
+        .setURL("https://discord.gg/"),
     );
 
     let helpmenu = new MessageEmbed()
@@ -41,18 +41,18 @@ module.exports = {
       )
 
       .setDescription(
-        `<:online:1210253399031812147> Prefix for this server is: ${prefix}\n<:online:1210253399031812147> Total Commands: ${client.commands.size}\n<:online:1210253399031812147>**A Rich Quality Music Bot
-Prefix For this server : - **
+        `<:online:1210253399031812147> Prefix hiện tại là: ${prefix}\n<:online:1210253399031812147> Total Commands: ${client.commands.size}\n<:online:1210253399031812147>**A Rich Quality Music Bot
+Prefix hiện tại của máy chủ : - **
   
-  <:online:1210253399031812147> [Invite ${client.user.username}](https://discord.gg/k7euMVR4q6)
+  <:online:1210253399031812147> [Invite ${client.user.username}](https://discord.gg/)
   
-  <:online:1210253399031812147> [Vote ${client.user.username}](https://discord.gg/k7euMVR4q6)
+  <:online:1210253399031812147> [Vote ${client.user.username}](https://discord.gg/)
 \n**Command Categories**\n<:online:1210253399031812147> : **Info**\n<:online:1210253399031812147> : **Music**\n<:online:1210253399031812147> : **Filters**\n<:online:1210253399031812147> : **Settings**\n<:online:1210253399031812147> :  **Utility**\n<:online:1210253399031812147> : **All Commands**`,
       )
 
       //  .setFooter(ee.footertext, ee.footericon)
       .setFooter({
-        text: `Made With 💖 By king`,
+        text: `Made By ! Zenus`,
         iconURL: message.guild.iconURL({ dynamic: true }),
       })
       .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
@@ -65,37 +65,37 @@ Prefix For this server : - **
         .addOptions([
           {
             label: "Info",
-            description: "Information Commands Of king",
+            description: "Information Commands",
             value: "first",
             emoji: "❕",
           },
           {
             label: "Music",
-            description: "Music Commands Of king",
+            description: "Music Commands",
             value: "second",
             emoji: "🎵",
           },
           {
             label: "Filters",
-            description: "Filter Commands Of king",
+            description: "Filter Commands",
             value: "fourth",
             emoji: "🔊",
           },
           {
             label: "Setting",
-            description: "Configuration Commands Of king",
+            description: "Config Commands",
             value: "fifth",
             emoji: "⚙",
           },
           {
             label: "Utility",
-            description: "Utility commands of king",
+            description: "Utility commands",
             value: "sixth",
             emoji: "🎶",
           },
           {
             label: "All Commands",
-            description: "All Commands Of king",
+            description: "All Commands",
             value: "third",
             emoji: "📃",
           },
